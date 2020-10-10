@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://fonts.googleapis.com/css2?family=Pavanam&display=swap" rel="stylesheet">
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App Test</title>
+    <style>
+      .wrapper {
+        display: grid;
+        grid-template-columns: 1fr min(65ch, 100%) 1fr;
+      }
+
+      .wrapper > * {
+        grid-column: 2;
+      }
+
+      .full-bleed {
+        width: 100%;
+        grid-column: 1/4;
+        height: 60vh;
+        object-fit: cover;
+      }
+
+      .training-text {
+        font-size: 80px;
+        font-family: 'Pavanam', sans-serif;
+      }
+
+      .playarea {
+        background-color: black;
+        width: 98vw;
+        color: white;
+        height: max(600px, 95vh);
+        margin: 15px;
+      }
+
+      .alphablock {
+        position: absolute;
+        background-color: darkorange;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 40px;
+        cursor: default;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+          -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently
+                                      supported by Chrome and Opera */
+      }
+
+      .alphablock-medium {
+        position: absolute;
+        background-color: gray;
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 60px;
+        cursor: default;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+          -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently
+                                      supported by Chrome and Opera */
+      }
+
+      .alphablock-big {
+        position: absolute;
+        background-color: gray;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 80px;
+        cursor: default;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+          -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently
+                                      supported by Chrome and Opera */
+      }
+
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="wrapper">
+    </div>
+    <div id="root">
+
+    </div>
+  </body>
+</html>
