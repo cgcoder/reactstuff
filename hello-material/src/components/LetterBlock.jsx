@@ -23,9 +23,11 @@ const LetterBlock = (props) => {
     return (
         <animated.div key={props.key}
             {...bind()}
-            style={{transform}}
+            style={{transform, fontSize: '20px'}}
             className="alphablock-medium">
-            {props.alpha} 
+            <div>
+                {props.alpha} 
+            </div>
         </animated.div>
     );
 }
